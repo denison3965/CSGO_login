@@ -4,7 +4,7 @@ const app = express()
 //Configuracao 
     //Rotas
         app.get("/", (req, res) => {
-            res.send("Esta tudo funcionando por aqui")
+            res.send("Esta tudo ok por aqui")
         })
 
         app.get("/login", (req, res) => {
