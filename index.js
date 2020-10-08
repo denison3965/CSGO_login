@@ -3,10 +3,12 @@ const app = express()
 
 //Configuracao 
     //Rotas
-        app.get("/", (req, res) => {
+        app.get("/teste", (req, res) => {
             res.send("Esta tudo funcionando por aqui")
         })
         app.use(express.static(__dirname + "/cliente"))
+
+
         
 
 const porta = 8081
