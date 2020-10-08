@@ -19,7 +19,7 @@ const app = express()
             res.send("Escolha da equipe")
         })
 
-        app.use(express.static(__dirname + "/react"))
+        app.use(express.static(__dirname + "/Front_end"))
 
 
         
