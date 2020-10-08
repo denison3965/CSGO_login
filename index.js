@@ -6,7 +6,7 @@ const app = express()
         app.get("/", (req, res) => {
             res.send("Esta tudo funcionando por aqui")
         })
-        app.use(express.static(__dirname + "/cliente"))
+        app.use(express.static(__dirname + "/client"))
         
 
 const porta = 8081
