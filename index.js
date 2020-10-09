@@ -66,8 +66,12 @@ app.get("/Equipe", (req, res) => {
     res.send("Escolha da equipe")
 })
 
-app.use(express.static(__dirname + "/cliente"))
 
+
+        app.use(express.static(__dirname + "/Front_end"))
+
+
+        
 
 const porta = 8081
 app.listen(porta, () => {
