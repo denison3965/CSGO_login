@@ -60,8 +60,12 @@ app.post("/verificar", (req, res) => {
     })
 })
 
-app.get("/Equipe", (req, res) => {
-    res.send("Escolha da equipe")
+// app.get("/armas", (req, res) => {
+//     res.send("Escolha uma arma")
+// })
+
+app.get("/armas", (req, res) => {
+    res.sendFile(__dirname + "/module/armas.json")
 })
 
 

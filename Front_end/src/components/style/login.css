@@ -94,7 +94,7 @@
   }
 
   @media only screen and (max-width: 1200px) {
-    .login{
+    .login2{
       width:50vw;
       height: 90vh;
       top : 50%;
@@ -103,7 +103,7 @@
   }
 
   @media only screen and (max-width: 600px) {
-    .login{
+    .login2{
       width:70vw;
       height: 90vh;
       top : 50%;
