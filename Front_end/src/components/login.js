@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './style/login.css';
 import logo from './images/logo-cs.png';
 import axios from 'axios'
+import Cookies from 'universal-cookie'
+import { Redirect } from 'react-router-dom';
+
+const cookies = new Cookies()
 
 
 export default () => {
@@ -13,11 +17,22 @@ export default () => {
 
     function enviarFormulario() {
         axios.post('/verificar', { username : userName, password: password}).then(result => {
-            console.log(result.data)
-            setToken(result.data)
-            console.log(token)
+            console.log(result)
+            //Setando o meu Cookie com o meu token vindo do servidor
+            cookies.set('tokeJWT', result.data, { path: '/'})
+            console.log(cookies.get('tokeJWT'))
 
-        })
+
+            if(result.data != "Senha invalida ou username invalido"){
+
+                //redirecionando para a pagina do usuario com suas armas se o servidor me trazer um token
+                window.location.replace("http://localhost:3000/register")
+            }
+            else{
+                console.log("Algo deu errado")
+            }
+            
+        }).catch((err) => {console.log("Houve um erro: "+ err)})
     }
 
     function teste() {
