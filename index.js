@@ -40,7 +40,6 @@ app.post("/formulario", (req, res) => {
         })
     } )
 
-})
 
 app.post("/verificar", (req, res) => {
     Usuario.findOne({ where: { username: req.body.username } }).then((usuario) => {
