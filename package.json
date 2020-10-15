@@ -17,6 +17,7 @@
     "http": "0.0.1-security",
     "jsonwebtoken": "^8.5.1",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "universal-cookie": "^4.0.4"
   }
 }
