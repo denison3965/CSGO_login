@@ -5,10 +5,10 @@ import video from './videos/intro.mp4'
 
 export default () => {
     return(
-        <header>
+        <div>
             <video id="filme" autoPlay={true} loop={true} >
                 <source src={video} type="video/mp4"/>
             </video>
-        </header>
+        </div>
     )
 }

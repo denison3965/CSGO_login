@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
-import Login from './components/login'
-import Video from './components/trailer'
+import Routes from './router';
 
 
 function App() {
@@ -14,9 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <Video />
-      <Login />
- 
+      <Routes />
     </div>
   );
 }

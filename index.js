@@ -24,21 +24,20 @@ app.get("/cadastro", (req, res) => {
 })
 
 app.post("/formulario", (req, res) => {
-    Usuario.findOne({where: { email : req.body.email}}).then((Usuario) => {
-        res.send("Email ja existentes")
-    }).catch(() => {
-        usuario.create({
-            name: req.body.name,
-            age: req.body.age,
-            username: req.body.username,
-            email: req.body.email,
-            password: req.body.password
-        }).then(function () {
-            res.send("Usuario criado com sucesso!")
-        }).catch(function (erro) {
-            res.send("houve um erro:" + erro)
-        })
-    } )
+
+        Usuario.create({
+        name: req.body.name,
+        age: req.body.age,
+        username: req.body.username,
+        email: req.body.email,
+        password: req.body.password
+    }).then(function () {
+        res.send("Usuario criado com sucesso!")
+    }).catch(function (erro) {
+        res.send("houve um erro:" + erro)
+    })
+})
+
 
 
 app.post("/verificar", (req, res) => {

@@ -6,12 +6,16 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@unform/core": "^2.1.3",
+    "@unform/web": "^2.1.3",
     "axios": "^0.20.0",
     "carbon-components": "^10.21.0",
     "carbon-components-react": "^7.21.0",
     "carbon-icons": "^7.0.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-hook-form": "^6.9.2",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3"
   },
   "scripts": {

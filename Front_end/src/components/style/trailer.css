@@ -1,5 +1,6 @@
 
 header{
+    width: 100vw;
     height: auto;
     overflow: hidden;
 }
@@ -9,5 +10,5 @@ header{
     min-width: 100%;
     min-height: 100%;
     width: auto;
-    height: auto
+    height: auto;
 }
