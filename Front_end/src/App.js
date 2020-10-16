@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import axios from 'axios';
 import Routes from './router';
 
+import Home from './pages/home'
+
 
 function App() {
 
@@ -13,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <Routes />
+      < Home />
     </div>
   );
 }

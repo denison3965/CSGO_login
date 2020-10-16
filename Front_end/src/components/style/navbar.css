@@ -1,0 +1,19 @@
+.NavBar{
+    z-index: 11;
+    position: absolute;
+    display:flex;
+    justify-content:space-between
+}
+.color-navbar{
+    background-color: black !important;
+}
+.tamanho{
+    width:80vw;
+}
+.config-logo{
+    width:135px;
+    height: 50px;
+}
+.nav-wrapper img{
+    margin-top: 10px;
+}

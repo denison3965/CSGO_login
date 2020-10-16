@@ -76,7 +76,7 @@ function VerificaJWT(req, res, next){
     if (!token)
      return res.status(401).send({auth: false, message: 'Token não informado'})
 
-     jwt.verify(token, secret, function(err, decoded){
+     jwt.verify(token, process.env.SECRET, function(err, decoded){
         if(err)
         return res.status(500).send({auth: false, message: 'Token invalido'})
         
