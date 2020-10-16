@@ -3,6 +3,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import MainPage from './pages/mainPage';
 import RegisterPage from './pages/registerPage'
+import ComponenteHome from './components/teste'
 
 function Routes() {
     return(
@@ -10,6 +11,7 @@ function Routes() {
             <Switch>
                 <Route path="/" exact component={MainPage} />
                 <Route path="/register" component={RegisterPage} />
+                <Route path="/home" component={ComponenteHome} />
             </Switch>
         </BrowserRouter>
     )

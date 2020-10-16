@@ -13,6 +13,7 @@ export default () => {
     const [userName, setUserName] = useState()
     const [password, setPassword] = useState()
     const [token, setToken] = useState()
+    const [error_msg, setError_msg] = useState()
 
 
     function enviarFormulario() {
@@ -26,10 +27,11 @@ export default () => {
             if(result.data != "Senha invalida ou username invalido"){
 
                 //redirecionando para a pagina do usuario com suas armas se o servidor me trazer um token
-                window.location.replace("http://localhost:3000/register")
+                window.location.replace("http://localhost:3000/home")
+                
             }
             else{
-                console.log("Algo deu errado")
+                setError_msg(result.data)
             }
             
         }).catch((err) => {console.log("Houve um erro: "+ err)})
@@ -54,6 +56,7 @@ export default () => {
                     
                     <div className="login-box">
                         <h1>Login</h1>
+
                         <form method="POST" action="/verificar">
                             <div class="textbox">
                                 <i class="fas fa-user"></i>
@@ -68,7 +71,9 @@ export default () => {
                             <input type="button" class="btn" value="Enter" onClick={enviarFormulario}/>
                             <a href="/register"><input type="button" class="btn_roxo" value="Register"/></a>
                         </form>
-                        
+                        <div>
+                        {error_msg != null? <div className="alert alert-danger">{error_msg}</div>: null}
+                       </div>
                     </div>
                 </div>
         </div>
