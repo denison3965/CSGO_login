@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
     res.send("Esta tudo ok por aqui")
 })
 
-app.get("/login", (req, res) => {
+app.get("/login", (req, res, next) => {
     res.sendFile(__dirname + "/module/login.html")
 })
 
@@ -42,8 +42,6 @@ app.post("/formulario", (req, res) => {
     })
 })
 
-
-
 app.post("/verificar", (req, res) => {
     Usuario.findOne({ where: { username: req.body.username } }).then((usuario) => {
         if (usuario) {
@@ -64,20 +62,30 @@ app.post("/verificar", (req, res) => {
     })
 })
 
-// app.get("/armas", (req, res) => {
-//     res.send("Escolha uma arma")
-// })
+app.get("/equipe", (req, res) => {
+    res.send("Está tudo ok aqui")
+})
 
-app.get("/armas", (req, res) => {
+app.get("/armas", VerificaJWT, (req, res, next) => {
     res.sendFile(__dirname + "/module/armas.json")
 })
 
+//função que verifica se o JWT está Ok 
+function VerificaJWT(req, res, next){
+    var token = req.headers['x-access-token']
+    if (!token)
+     return res.status(401).send({auth: false, message: 'Token não informado'})
 
-
-app.use(express.static(__dirname + "/Front_end"))
-
-
+     jwt.verify(token, secret, function(err, decoded){
+        if(err)
+        return res.status(500).send({auth: false, message: 'Token invalido'})
         
+        req.UsuarioId = decoded.id
+        console.log("Usario Id:" + decoded.id)
+        next()
+     })
+}
+        app.use(express.static(__dirname + "/Front_end"))
 
 const porta = 3001
 app.listen(porta, () => {
