@@ -9,21 +9,9 @@ const flash = require("connect-flash")
 
 //Configuracao 
 
-    app.use(bodyParser.urlencoded({ extended: false }))
-    app.use(bodyParser.json())
-    app.use(session({
-        secret: "Aqui_eu_tenho_uma_secreat",
-        resave: true,
-        saveUninitialized: true
-    }))
-    app.use(flash())
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 
-    //Configuracao Middleware
-
-    app.use((req, res, next ) => {
-        res.locals.success_msg = req.flash("success_msg")
-        res.locals.error_msg = req.flash("error_msg")
-    })
 
 //Rotas
 app.get("/", (req, res) => {
@@ -86,12 +74,12 @@ app.get("/armas", (req, res) => {
 
 
 
-        app.use(express.static(__dirname + "/Front_end"))
+app.use(express.static(__dirname + "/Front_end"))
 
 
         
 
-const porta = 8081
+const porta = 3001
 app.listen(porta, () => {
     console.log("O servidor esta escutando na portal " + porta)
 })

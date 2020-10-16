@@ -27,7 +27,7 @@ export default () => {
             if(result.data != "Senha invalida ou username invalido"){
 
                 //redirecionando para a pagina do usuario com suas armas se o servidor me trazer um token
-                window.location.replace("http://localhost:3000/home")
+                window.location.replace("http://localhost:3000/access")
                 
             }
             else{
