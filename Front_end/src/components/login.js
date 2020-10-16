@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './style/login.css';
 import logo from './images/logo-cs.png';
 import axios from 'axios'
+import Cookies from 'universal-cookie'
+import { Redirect } from 'react-router-dom';
+
+const cookies = new Cookies()
 
 
 export default () => {
@@ -9,15 +13,28 @@ export default () => {
     const [userName, setUserName] = useState()
     const [password, setPassword] = useState()
     const [token, setToken] = useState()
+    const [error_msg, setError_msg] = useState()
 
 
     function enviarFormulario() {
         axios.post('/verificar', { username : userName, password: password}).then(result => {
-            console.log(result.data)
-            setToken(result.data)
-            console.log(token)
+            console.log(result)
+            //Setando o meu Cookie com o meu token vindo do servidor
+            cookies.set('tokeJWT', result.data, { path: '/'})
+            console.log(cookies.get('tokeJWT'))
 
-        })
+
+            if(result.data != "Senha invalida ou username invalido"){
+
+                //redirecionando para a pagina do usuario com suas armas se o servidor me trazer um token
+                window.location.replace("http://localhost:3000/home")
+                
+            }
+            else{
+                setError_msg(result.data)
+            }
+            
+        }).catch((err) => {console.log("Houve um erro: "+ err)})
     }
 
     function teste() {
@@ -39,6 +56,7 @@ export default () => {
                     
                     <div className="login-box">
                         <h1>Login</h1>
+
                         <form method="POST" action="/verificar">
                             <div class="textbox">
                                 <i class="fas fa-user"></i>
@@ -53,7 +71,9 @@ export default () => {
                             <input type="button" class="btn" value="Enter" onClick={enviarFormulario}/>
                             <a href="/register"><input type="button" class="btn_roxo" value="Register"/></a>
                         </form>
-                        
+                        <div>
+                        {error_msg != null? <div className="alert alert-danger">{error_msg}</div>: null}
+                       </div>
                     </div>
                 </div>
         </div>

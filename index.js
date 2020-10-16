@@ -4,11 +4,27 @@ const bodyParser = require('body-parser')
 require("dotenv-safe").config();
 const jwt = require('jsonwebtoken');
 const Usuario = require('./module/usuario')
+const session = require("express-session")
+const flash = require("connect-flash")
 
 //Configuracao 
 
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
+    app.use(bodyParser.urlencoded({ extended: false }))
+    app.use(bodyParser.json())
+    app.use(session({
+        secret: "Aqui_eu_tenho_uma_secreat",
+        resave: true,
+        saveUninitialized: true
+    }))
+    app.use(flash())
+
+    //Configuracao Middleware
+
+    app.use((req, res, next ) => {
+        res.locals.success_msg = req.flash("success_msg")
+        res.locals.error_msg = req.flash("error_msg")
+    })
+
 //Rotas
 app.get("/", (req, res) => {
     res.send("Esta tudo ok por aqui")
@@ -55,13 +71,17 @@ app.post("/verificar", (req, res) => {
                  return res.json({auth:true, token: token})
             })
         } else {
-            res.send("Username Invalido ou senha Invalida")
+            res.send("Senha invalida ou username invalido")
         }
     })
 })
 
-app.get("/Equipe", (req, res) => {
-    res.send("Escolha da equipe")
+// app.get("/armas", (req, res) => {
+//     res.send("Escolha uma arma")
+// })
+
+app.get("/armas", (req, res) => {
+    res.sendFile(__dirname + "/module/armas.json")
 })
 
 
