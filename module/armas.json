@@ -1,0 +1,64 @@
+{
+    "armas": [
+      {
+        "nome": "AK-47",
+        "imagem": "https://img2.gratispng.com/20180616/rsx/kisspng-counter-strike-global-offensive-ak-47-firearm-bol-ak47-5b2569e2a802d5.1729284815291785946882.jpg",
+        "preço": 2500,
+        "id": 1
+      },
+      {
+        "nome": "M4A4",
+        "imagem": "https://img2.gratispng.com/20180325/gzq/kisspng-counter-strike-global-offensive-weapon-firearm-m4-counter-strike-5ab84327a5f938.8521687215220252556798.jpg",
+        "preço": 3100,
+        "id": 2
+      },
+      {
+        "nome": "M4A1-S",
+        "imagem": "https://e7.pngegg.com/pngimages/427/303/png-clipart-counter-strike-global-offensive-m4-carbine-m4a1-s-weapon-weapon-assault-rifle-airsoft.png",
+        "preço": 4100,
+        "id": 3
+      },
+      {
+        "nome": "AWP",
+        "imagem": "https://www.pngfind.com/pngs/m/7-75323_awp-cs-go-hd-png-download.png",
+        "preço": 4750,
+        "id": 4
+      },
+      {
+        "nome": "Desert Eagle",
+        "imagem": "https://img2.gratispng.com/20180410/wke/kisspng-counter-strike-global-offensive-imi-desert-eagle-eagle-5accb722567731.1540996415233656663542.jpg",
+        "preço": 650,
+        "id": 5
+      },
+      {
+        "nome": "AUG",
+        "imagem": "https://i.pinimg.com/originals/df/4d/2f/df4d2f459a72885b60a5975f04ee80a1.png",
+        "preço": 3300,
+        "id": 6
+      },
+      {
+        "nome": "MAC-10",
+        "imagem": "https://1.bp.blogspot.com/-zlLzBJcFkAQ/WRHKqwKOShI/AAAAAAAACA8/7sNveOQHJXQ8gWP3QZ50pIYJFvm4VVgyQCLcB/s1600/CS_GO_MAC_10_NEON_RIDER.png",
+        "preço": 101050,
+        "id": 7
+      },
+      {
+        "nome": "MP9",
+        "imagem": "https://e7.pngegg.com/pngimages/138/234/png-clipart-counter-strike-global-offensive-brugger-thomet-mp9-airsoft-guns-submachine-gun-green-screen-ak47-assault-rifle.png",
+        "preço": 1250,
+        "id": 8
+      },
+      {
+        "nome": "Galil",
+        "imagem": "https://e7.pngegg.com/pngimages/453/991/png-clipart-counter-strike-global-offensive-imi-galil-2014-dreamhack-winter-weapon-scar-20-tsunami-video-game-assault-rifle.png",
+        "preço": 2200,
+        "id": 9
+      },
+      {
+        "nome": "FAMAS",
+        "imagem": "https://w7.pngwing.com/pngs/973/176/png-transparent-counter-strike-global-offensive-counter-strike-1-6-famas-video-game-weapon-weapon-game-video-game-assault-rifle.png",
+        "preço": 2250,
+        "id": 10
+      }
+    ]
+  }
