@@ -5,6 +5,7 @@ import MainPage from './pages/mainPage';
 import RegisterPage from './pages/registerPage'
 import accessPage from './pages/accessPage'
 import ComponenteHome from './components/teste'
+import Arsenal from './pages/home'
 
 function Routes() {
     return(
@@ -14,7 +15,8 @@ function Routes() {
                 <Route path="/register" component={RegisterPage} />
                 <Route path="/access" component={accessPage} />
                 <Route path="/home" component={ComponenteHome} />
-            </Switch>
+                <Route path="/arsenal"  component={Arsenal} />
+            </Switch> 
         </BrowserRouter>
     )
 }

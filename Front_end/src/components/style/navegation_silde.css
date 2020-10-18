@@ -1,0 +1,35 @@
+.myarsenal{
+    position:absolute;
+    width:60vw;
+}
+.myarsenal-area{
+    width:60vw;
+}
+.MuiBox-root{
+    border-bottom: 2px solid #00ff00;
+    border-radius: 5px;
+    color: white;
+}
+.arma-area{
+    width:300px;
+    height: 304px;
+    margin-bottom: 30px;
+}
+.arma-area img{
+    height: 300px;
+    width : 300px; 
+    z-index: 11;
+    position: absolute;
+}
+.fundo_tranparente_arma{
+    background-color: rgba(0, 0, 0, 0.479);
+    width:296px;
+    height: 300px;
+    position: absolute;
+    z-index: 10;
+}
+.Armas_local{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between
+}

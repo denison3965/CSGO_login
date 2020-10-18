@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect} from 'react';
+import {Link} from 'react-router-dom'
 import './style/login.css';
 import logo from './images/logo-cs.png';
 import axios from 'axios'
@@ -18,12 +19,14 @@ export default () => {
 
     function enviarFormulario() {
         axios.post('/verificar', { username : userName, password: password}).then(result => {
+
             console.log(result)
+
             //Setando o meu Cookie com o meu token vindo do servidor
             cookies.set('tokeJWT', result.data, { path: '/'})
             console.log(cookies.get('tokeJWT'))
 
-
+            //Se realmente recebermos um token entramos na pagina de selecao
             if(result.data != "Senha invalida ou username invalido"){
 
                 //redirecionando para a pagina do usuario com suas armas se o servidor me trazer um token
@@ -60,16 +63,17 @@ export default () => {
                         <form method="POST" action="/verificar">
                             <div class="textbox">
                                 <i class="fas fa-user"></i>
-                                <input type="text" placeholder="Username" name="username" onChange={e => setUserName(e.target.value)}/>
+                                <input className="my_input" type="text" placeholder="Username" name="username" onChange={e => setUserName(e.target.value)}/>
                             </div>
 
                             <div class="textbox">
                                 <i class="fas fa-lock"></i>
-                                <input type="password" placeholder="Password" name="password" onChange={e => setPassword(e.target.value)}/>
+                                <input className="my_input" type="password" placeholder="Password" name="password" onChange={e => setPassword(e.target.value)}/>
                             </div>
 
-                            <input type="button" class="btn" value="Enter" onClick={enviarFormulario}/>
-                            <a href="/register"><input type="button" class="btn_roxo" value="Register"/></a>
+                            <input type="button" class="btn_enter" value="Enter" onClick={enviarFormulario}/>
+                            <Link to="/register"><input type="button" class="btn_roxo" value="Register"/></Link>
+
                         </form>
                         <div>
                         {error_msg != null? <div className="alert alert-danger">{error_msg}</div>: null}

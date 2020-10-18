@@ -2,18 +2,19 @@ body{
     background-color: black;
 }
 .background-home img{
-    width:100vw;
-    height:100vh;
+    width:99vw;
+    height:auto;
     background-size: cover;
     background-position: center;
     background-color:#000;
     z-index: 9;
     position: absolute;
     z-index: 9;
+    background-repeat: repeat-y;
 }
 
 .fundo_trasparente{
-    width:100vw;
+    width:99vw;
     height:100vh;
     position:absolute;
     background-color: rgba(0, 0, 0, 0.472);

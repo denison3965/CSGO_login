@@ -1,0 +1,9 @@
+.arsenal{
+    position: absolute;
+    z-index: 20;
+    top:100px;
+    left: 500px;
+}
+.arsenal h4 {
+    color: white
+}
