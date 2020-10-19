@@ -7,3 +7,11 @@
 .arsenal h4 {
     color: white
 }
+.info_area{
+    display: flex;
+    justify-content:space-between;
+    
+}
+.info_area a {
+    margin-left: 800px;
+}

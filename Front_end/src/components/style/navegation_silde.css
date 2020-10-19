@@ -15,9 +15,10 @@
     width:300px;
     height: 304px;
     margin-bottom: 30px;
+    transition: all 0.2s;
 }
 .arma-area:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .arma-area img{
     height: 300px;
