@@ -3,7 +3,7 @@ header{
     height: auto;
     overflow: hidden;
 }
-.img{
+#bk_acesso-area img{
     max-width: 100%;
     max-height: 100%;
     width: auto;

@@ -15,7 +15,8 @@ function Routes() {
                 <Route path="/register" component={RegisterPage} />
                 <Route path="/access" component={accessPage} />
                 <Route path="/home" component={ComponenteHome} />
-                <Route path="/arsenal"  component={Arsenal} />
+                <Route path='/arsenal-t' render={(props) => <Arsenal {...props} img="Imaget"/>} />
+                <Route path='/arsenal-ct' render={(props) => <Arsenal {...props} img="ImageCt"/>} />  
             </Switch> 
         </BrowserRouter>
     )

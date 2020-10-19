@@ -2,7 +2,8 @@
     z-index: 11;
     position: absolute;
     display:flex;
-    justify-content:space-between
+    justify-content:space-between;
+    top: 0;
 }
 .color-navbar{
     background-color: black !important;

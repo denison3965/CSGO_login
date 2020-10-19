@@ -6,8 +6,18 @@ const jwt = require('jsonwebtoken');
 const Usuario = require('./module/usuario')
 const session = require("express-session")
 const flash = require("connect-flash")
+const cors = require('cors')
 
 //Configuracao 
+
+//Configuracao do mei cors como midleware para dizer quias URL poderam exetucar requisicao ao nosso back end
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*")
+
+    res.header("Acces-Control-Allow-Methods", "GET,POST")
+    app.use(cors())
+    next()
+})
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())

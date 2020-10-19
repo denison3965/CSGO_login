@@ -66,7 +66,7 @@ export default () => {
                     </div>
 
                     
-                    <input type="button" class="btn" value="Create an Account" onClick={enviarFormulario}/>
+                    <input type="button" class="btn_enter" value="Create an Account" onClick={enviarFormulario}/>
                     <a href="/"><input type="button" class="btn_roxo" value="Back to Login"/></a>
 
                 </div>

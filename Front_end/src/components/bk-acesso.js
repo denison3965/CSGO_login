@@ -6,8 +6,8 @@ import imagem from './images/bk-acesso.png';
 
 export default () => {
     return(
-        <header>
-            <img src={imagem} className='img'></img>
+        <header id="bk_acesso-area">
+            <img src={imagem}></img>
         </header>
     )
 }
