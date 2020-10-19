@@ -5,7 +5,7 @@ import './style/arsenal.css'
 export default () => {
     return(
         <div className="arsenal">
-            <h4>Nome do soldado</h4>
+            <h4>Soldier's name</h4>
             <Navegation />
         </div>
         

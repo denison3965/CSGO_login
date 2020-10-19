@@ -1,0 +1,93 @@
+#contato-area{
+    position:absolute;
+    height: 100vh;
+}
+#contato-area .containerr {
+    width: 90%;
+    margin: 50px auto;
+}
+#contato-area .heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: white;
+}
+  
+#contato-area .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+    width: 100%;
+    height: 100vh;
+}
+  
+#contato-area .card-dev {
+    width: 360px;
+    margin-left: 8vh;
+    background: rgba(0, 0, 0, 0.883);
+    border: 1px solid rgba(0, 0, 0, 0.883);
+    border-radius: 40px 20px 10px 0px;
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+  
+#contato-area .card-header {
+    text-align: center;
+    padding: 5px 5px;
+    background: linear-gradient(to right, black, rgb(3, 3, 3));
+    border-radius: 40px 20px 0px 0px;
+    color: white;
+}
+  
+#contato-area .card-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+  
+#contato-area .card-body .btn-dev {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #2867B2, rgb(93, 166, 255));
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+
+#contato-area .card-body .btn-dev:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(to right, rgb(0, 81, 180), rgb(76, 135, 206));
+}
+  
+#contato-area .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+#contato-area #p-card{
+    color: white;
+}  
+@media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
+    }
+}
+  
+@media screen and (max-width: 620px) {
+    #contato-area .container {
+      width: 100%;
+    }
+  
+    #contato-area .heading {
+      padding: 20px;
+      font-size: 20px;
+    }
+  
+    #contato-area .card {
+      width: 80%;
+    }
+}
+  

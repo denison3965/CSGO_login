@@ -6,6 +6,7 @@ import RegisterPage from './pages/registerPage'
 import accessPage from './pages/accessPage'
 import ComponenteHome from './components/teste'
 import Arsenal from './pages/home'
+import Contato from './pages/contato'
 
 function Routes() {
     return(
@@ -16,7 +17,8 @@ function Routes() {
                 <Route path="/access" component={accessPage} />
                 <Route path="/home" component={ComponenteHome} />
                 <Route path='/arsenal-t' render={(props) => <Arsenal {...props} img="Imaget"/>} />
-                <Route path='/arsenal-ct' render={(props) => <Arsenal {...props} img="ImageCt"/>} />  
+                <Route path='/arsenal-ct' render={(props) => <Arsenal {...props} img="ImageCt"/>} /> 
+                <Route path="/contato" component={Contato} /> 
             </Switch> 
         </BrowserRouter>
     )

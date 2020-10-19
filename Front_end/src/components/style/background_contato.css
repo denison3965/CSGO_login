@@ -1,0 +1,18 @@
+
+#fundo {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#fundo img {
+    height: 130vh;
+    width: 100vw;
+    position: fixed;
+    background-attachment: fixed;
+    background-size: center;
+
+}

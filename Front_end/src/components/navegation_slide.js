@@ -130,8 +130,8 @@ export default function SimpleTabs() {
         <div className={classes.root} className="myarsenal-area">
             <AppBar position="static">
                 <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-                <Tab label="Armas Primarias" {...a11yProps(0)} />
-                <Tab label="Facas" {...a11yProps(1)} />
+                <Tab label="primary weapons" {...a11yProps(0)} />
+                <Tab label="knives" {...a11yProps(1)} />
                 </Tabs>
             </AppBar>
             <TabPanel value={value} index={0}>
@@ -139,6 +139,10 @@ export default function SimpleTabs() {
                     <div className="arma-area">
                         <div className="fundo_tranparente_arma"></div>
                         <img src={Image_Arma_AK47} alt="arma" />
+                    </div>
+                    <div className="arma-area">
+                        <div className="fundo_tranparente_arma"></div>
+                        <img src={Image_Arma_m4a1} alt="arma" />
                     </div>
                     <div className="arma-area">
                         <div className="fundo_tranparente_arma"></div>
@@ -150,6 +154,18 @@ export default function SimpleTabs() {
                     </div>
                     <div className="arma-area">
                         <div className="fundo_tranparente_arma"></div>
+                        <img src={Image_Arma_MP5} alt="arma" />
+                    </div>
+                    <div className="arma-area">
+                        <div className="fundo_tranparente_arma"></div>
+                        <img src={Image_Arma_M4A1} alt="arma" />
+                    </div>
+                    <div className="arma-area">
+                        <div className="fundo_tranparente_arma"></div>
+                        <img src={Image_Arma_P90} alt="arma" />
+                    </div>
+                    <div className="arma-area">
+                        <div className="fundo_tranparente_arma"></div>
                         <img src={Image_Arma_UZI} alt="arma" />
                     </div>
                     <div className="arma-area">
@@ -158,20 +174,9 @@ export default function SimpleTabs() {
                     </div>
                     <div className="arma-area">
                         <div className="fundo_tranparente_arma"></div>
-                        <img src={Image_Arma_P90} alt="arma" />
-                    </div>
-                    <div className="arma-area">
-                        <div className="fundo_tranparente_arma"></div>
                         <img src={Image_Arma_MP9} alt="arma" />
                     </div>
-                    <div className="arma-area">
-                        <div className="fundo_tranparente_arma"></div>
-                        <img src={Image_Arma_m4a1} alt="arma" />
-                    </div>
-                    <div className="arma-area">
-                        <div className="fundo_tranparente_arma"></div>
-                        <img src={Image_Arma_AUG} alt="arma" />
-                    </div>
+
                     
                     
                 </div>

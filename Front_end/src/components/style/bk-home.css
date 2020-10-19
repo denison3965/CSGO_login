@@ -1,5 +1,5 @@
 .background-home{
-background-repeat: repeat-y;
+background-color:#000;
 }
 .background-home img{
     width:99vw;
@@ -9,13 +9,15 @@ background-repeat: repeat-y;
     background-color:#000;
     z-index: 9;
     background-repeat: repeat;
+    position: fixed;
 }
 
 .fundo_trasparente{
-    width:99vw;
+    width:100vw;
     height:100vh;
     position:absolute;
     background-color: rgba(0, 0, 0, 0.472);
     z-index: 10;
     background-repeat: repeat;
+    position: fixed;
 }

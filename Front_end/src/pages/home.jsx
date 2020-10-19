@@ -54,7 +54,6 @@ export default (props) => {
     return(
         <div>
             <Backgroun_home />
-            <Backgroun_home />
             <NavBar />
             <Soldado img={props.img}/>
             <Arsenal />
