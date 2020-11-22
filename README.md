@@ -1,6 +1,6 @@
 # CSGO_login
 
-## Dynamic Login Page Using React Js, With JWT aythenticantion
+## Dynamic Login Page Using React Js, With JWT aythenticantion 💣💣💣
 
 ### Tacnologies used;
 - ⚛️ **React Js** — A JavaScript library for building user interfaces
