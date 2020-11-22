@@ -15,7 +15,7 @@
 
   ![Preview-Screens](https://github.com/denison3965/CSGO_login/blob/main/giphy.gif)
 
-## Acess Page
+## Acesse Page
 
   ![Preview-Screens](https://github.com/denison3965/CSGO_login/blob/main/img3.png)
 
