@@ -3,9 +3,11 @@
 ## Dynamic Login Page Using React Js, With JWT aythenticantion
 
 ### Tacnologies used;
-- React Js
-- Node Js with express and sequalize
-- MySql
+- ⚛️ **React Js** — A JavaScript library for building user interfaces
+- 💽 **MySQL** — A Data Base 
+- 🔗 **Express** — Express is a minimal and flexible Node.js web application
+- 🔗 **Sequalize** — Sequelize is a promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server
+- 💹 **Node Js** — A web framework for Node Js
 
 # Site
 
@@ -67,3 +69,11 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### Devs
+
+  - Ana Lucia Ferreira Gome [GitHub](https://github.com/Ana204)
+  - Denison de Almeida Portela [GitHub](https://github.com/denison3965)
+  - Caio Daniel Pinto de Lima [GitHub](https://github.com/caiodanielp)
+  - Felipe Braga Duarte [GitHub](https://github.com/obragaa)
+  - Guilherme Cunha Mendes [GitHub](https://github.com/firgo12)
