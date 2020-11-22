@@ -41,7 +41,7 @@ to install the front-end dependencies (You can also use yarn if you want)
 and after
 ### `npm install`
 
-#### The second step is run the project:
+### The second step is run the project:
 
 In the project directory, you can run back-end:
 
@@ -56,7 +56,7 @@ And now, to run the front you need to enter the Front_end directory with thise c
 and after
 ### `npm start`
 
-#### If you want to deploy this application, follow this step
+### If you want to deploy this application, follow this step
 
 ### `npm run build`
 
