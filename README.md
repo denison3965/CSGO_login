@@ -6,7 +6,7 @@
 - ⚛️ **React Js** — A JavaScript library for building user interfaces
 - 💽 **MySQL** — A Data Base 
 - 🔗 **Express** — Express is a minimal and flexible Node.js web application
-- 🔗 **Sequalize** — Sequelize is a promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server
+- 🔗 **Sequelize** — Sequelize is a promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server
 - 💹 **Node Js** — A web framework for Node Js
 
 # Site
