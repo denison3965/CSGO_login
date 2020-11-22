@@ -1,3 +1,16 @@
 # CSGO_login
 
-![Preview-Screens](https://github.com/steniowagner/mindCast/blob/master/PUXA-R10!.png)
+## Dynamic Login Page Using React Js, With JWT aythenticantion
+
+## Tacnologies used;
+### - React Js
+### - Node Js with express and sequalize
+### - MySql
+
+# Site
+
+## Dynamic Login Page
+
+## Acess Page
+
+## Soldier Home Page
