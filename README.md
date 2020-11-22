@@ -30,7 +30,7 @@
 
 
 
-The first step in running this project, you need to run the commands to install the project's dependencies, both on the front end and the back end:
+#### The first step in running this project, you need to run the commands to install the project's dependencies, both on the front end and the back end:
 
 
 to install the back-end dependencies (You can also use yarn if you want)
@@ -41,7 +41,7 @@ to install the front-end dependencies (You can also use yarn if you want)
 and after
 ### `npm install`
 
-The second step is run the project:
+#### The second step is run the project:
 
 In the project directory, you can run back-end:
 
