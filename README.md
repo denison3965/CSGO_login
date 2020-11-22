@@ -2,10 +2,10 @@
 
 ## Dynamic Login Page Using React Js, With JWT aythenticantion
 
-## Tacnologies used;
-### - React Js
-### - Node Js with express and sequalize
-### - MySql
+### Tacnologies used;
+#### - React Js
+#### - Node Js with express and sequalize
+#### - MySql
 
 # Site
 
